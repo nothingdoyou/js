@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+
+<body>
+    <script>
+        const myArray = ['My value1', 'My value2', 'My value3'];
+        console.log('value1:', myArray);
+
+        myArray.push('My value4')
+        console.log(myArray)
+
+        myArray.unshift('My value5')
+        console.log(myArray)
+
+        myArray.shift([0])
+        console.log(myArray)
+
+        myArray.pop()
+        console.log(myArray)
+
+        console.log('value1:', myArray[0]);
+        console.log('value2:', myArray[1]);
+        console.log('value3:', myArray[2]);
+
+        console.log('陣列長度:', myArray.length);
+
+        myArray[2] = 'New'
+        console.log('myArray:', myArray)
+
+        myArray[6] = 'My value6'
+        console.log('myArray:', myArray)
+        console.log('myArray[5]:', myArray[5])
+
+        // Slice 選取需要的範圍，並未刪除
+        console.log('slice(2):', myArray.slice(1, 2))
+        console.log('myArray:', myArray)
+
+        // Splice 刪除從指定索引開始到多少數量的值   splice(index, amount, [add])
+        console.log('slice(2):', myArray.splice(1, 1, 'a', 'b'))
+        console.log('myArray:', myArray)
+        console.log('slice(2):', myArray.splice(1, 1, ['a', 'b']))
+        console.log('myArray:', myArray)
+        console.log('slice(2):', myArray.splice(1, 2, ['a', 'b']))
+        console.log('myArray:', myArray)
+
+    </script>
+</body>
+
+</html>

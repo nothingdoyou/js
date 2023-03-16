@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+
+<body>
+
+
+    <script>
+        var myName = 'Eason';
+        // *var變數可被修改，依照指令順序
+        // myName = 'Alex';
+        // myName = 123;
+
+        // *重複宣告雖可執行並取代前值，但此舉不好；let則完全無法重複宣告(error)
+        var myName = 'Alex'
+
+        // *const常數則無法修改，若更改定義則程式無法執行
+        // const myName = 'Hao';
+
+        console.log('Hello', myName)
+
+        // *若先console再定義變數則會 提升(Hoist) ，故還是可以執行程式
+        // *執行結果為 變數 = undefined
+        // var myName = 'Eason'
+
+        // *但是let定義變數，則無法執行
+        // let myName = 'Eason'
+
+
+    </script>
+</body>
+
+</html>
